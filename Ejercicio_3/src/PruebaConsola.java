@@ -6,6 +6,9 @@ import java.util.Arrays;
 
 public class PruebaConsola {
     public static void main(String[] args) {
+        String OS = System.getProperty("os.name");
+        System.out.println("El Sistema operativo es " + OS);
+
         final String FILE_NAME = args[0];
         File archivo = new File(FILE_NAME);
         String[] joselito;
