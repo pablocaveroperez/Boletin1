@@ -15,10 +15,11 @@ public class PruebaConsola {
 
         if (archivo.isFile())
             readFileChar(FILE_NAME);
-        else{
+        else if (archivo.isDirectory()){
             joselito = showDirectoryContent(FILE_NAME);
             System.out.println(Arrays.toString(joselito));
-        }
+        }else
+            System.out.println("El fichero o directorio introducido no existe");
     }
 
     private static String[] showDirectoryContent(String DIRECTORY_NAME) {
