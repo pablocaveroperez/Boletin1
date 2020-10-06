@@ -12,6 +12,7 @@ public class Padre {
 
         while (iNumero == 1) {
             Process p = JavaProcess.exec(Hijo.class, jvmArgs, argsM);
+            System.out.println("Valor de salida del proceso: " + p.exitValue());
             iNumero = (int) ValidaLibrary.valida("Introduce un 1 para volver a ejecutarlo o un 0 para terminar: ", 0, 1, 1);
         }
     }
