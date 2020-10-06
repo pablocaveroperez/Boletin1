@@ -19,6 +19,4 @@ public class Padre {
             iSalir = (int) ValidaLibrary.valida("Introduce un 1 para volver a ejecutarlo o un 0 para terminar: ", 0, 1, 1);
         }
     }
-
-
 }
