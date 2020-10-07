@@ -11,7 +11,6 @@ public class Padre {
         List<String> jvmArgs = new ArrayList<>();
         List<String> argsM = new ArrayList<>();
 
-
         while(iSalir == 1) {
             iNum = (int) ValidaLibrary.valida("Introduce un numero del 0 al 10: ", 0, 10, 1);
             argsM.add(0, String.valueOf(iNum));
