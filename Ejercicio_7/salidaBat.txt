@@ -21,3 +21,26 @@ C:\Users\Medac\Desktop\PROG-REPO\Segundo\Boletin1\Ejercicio_7\NUEVO>DIRR
 
 C:\Users\Medac\Desktop\PROG-REPO\Segundo\Boletin1\Ejercicio_7\NUEVO>ECHO FIN COMANDOS 
 FIN COMANDOS
+
+C:\Users\Medac\Desktop\PROG-REPO\Segundo\Boletin1\Ejercicio_7>MD NUEVO 
+
+C:\Users\Medac\Desktop\PROG-REPO\Segundo\Boletin1\Ejercicio_7>CD NUEVO 
+
+C:\Users\Medac\Desktop\PROG-REPO\Segundo\Boletin1\Ejercicio_7\NUEVO>ECHO CREO FICHERO  1>mifichero.txt 
+
+C:\Users\Medac\Desktop\PROG-REPO\Segundo\Boletin1\Ejercicio_7\NUEVO>DIR
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: FA75-A1A9
+
+ Directorio de C:\Users\Medac\Desktop\PROG-REPO\Segundo\Boletin1\Ejercicio_7\NUEVO
+
+08/10/2020  12:12    <DIR>          .
+08/10/2020  12:12    <DIR>          ..
+08/10/2020  13:01                15 mifichero.txt
+               1 archivos             15 bytes
+               2 dirs  326.000.943.104 bytes libres
+
+C:\Users\Medac\Desktop\PROG-REPO\Segundo\Boletin1\Ejercicio_7\NUEVO>DIRR
+
+C:\Users\Medac\Desktop\PROG-REPO\Segundo\Boletin1\Ejercicio_7\NUEVO>ECHO FIN COMANDOS 
+FIN COMANDOS
