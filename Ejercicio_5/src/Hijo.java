@@ -3,6 +3,6 @@ public class Hijo {
         Thread.sleep(3000);
         int iNum = 2;
         System.out.println("Proceso Hijo terminado");
-        System.out.println(iNum);
+        System.exit(iNum);
     }
 }
