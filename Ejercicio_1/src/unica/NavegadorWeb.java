@@ -9,16 +9,17 @@ import java.util.concurrent.TimeUnit;
 public class NavegadorWeb {
     public static void main(String[] args) {
         String OS = System.getProperty("os.name");
+        final String RUTA_NAVEGADOR = args[0];
         if (OS.equals("Windows 10"))
-            navegadorWebWindows();
+            navegadorWebWindows(RUTA_NAVEGADOR);
         else if (OS.equals("Linux"))
-            navegadorWebLinux();
+            navegadorWebLinux(RUTA_NAVEGADOR);
         else
             System.out.println("Esta aplicacion no esta disponible para este sistema operativo");
     }
 
-    private static void navegadorWebLinux() {
-        String sRutaProceso = "google-chrome";
+    private static void navegadorWebLinux(String RUTA_NAVEGADOR) {
+        String sRutaProceso = RUTA_NAVEGADOR;
 
 
         int iRetorno = 0;
@@ -44,8 +45,8 @@ public class NavegadorWeb {
         }while (iRetorno == 0);
     }
 
-    private static void navegadorWebWindows() {
-        String sRutaProceso = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
+    private static void navegadorWebWindows(String RUTA_NAVEGADOR) {
+        String sRutaProceso = RUTA_NAVEGADOR;
 
 
         int iRetorno = 0;
@@ -67,7 +68,6 @@ public class NavegadorWeb {
             }catch (InterruptedException e) {
                 System.out.println("Error IE: " + e.getMessage());
             }
-
         }while (iRetorno == 0);
 
     }
