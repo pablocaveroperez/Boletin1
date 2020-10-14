@@ -28,7 +28,7 @@ public class Principal {
             try {
                 iTiempoMax = (int) ValidaLibrary.valida("Introduce el tiempo maximo de ejecucion del proceso: ", 1,100,1);
 
-                Process process = JavaProcess.exec(Principal.class, jvmArgs, argsM);
+                Process process = JavaProcess.exec(Traductor.class, jvmArgs, argsM);
                 process.waitFor(iTiempoMax,TimeUnit.SECONDS);
                 process.destroy();
                 process.waitFor();

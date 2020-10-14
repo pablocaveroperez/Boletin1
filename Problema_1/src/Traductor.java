@@ -3,16 +3,14 @@ import validaciones.ValidaLibrary;
 import java.io.IOException;
 
 public class Traductor {
-    private static String sIdioma1;
-    private static String sIdioma2;
-    private static String sFrase;
+
 
     public static void main(String[] args) {
-        traductor();
-    }
-
-    public static void traductor() {
+        String sIdioma1;
+        String sIdioma2;
+        String sFrase;
         String sRuta = ValidaLibrary.leer("Introduce la ruta del exe del navegador: ");
+
         sIdioma1 = ValidaLibrary.leer("Introduce el idioma del que vas a traducir.(Por ejemplo: es = Spanish, en = english)");
         sIdioma2 = ValidaLibrary.leer("Introduce el idioma al que quieres traducir.");
         sFrase = ValidaLibrary.leer("Introduce la frase a traducir: ");
