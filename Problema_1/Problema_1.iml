@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="ValidaLibrary" level="project" />
+    <orderEntry type="library" name="JavaProcess" level="project" />
   </component>
 </module>
