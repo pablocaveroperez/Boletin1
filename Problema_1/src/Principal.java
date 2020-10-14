@@ -31,7 +31,6 @@ public class Principal {
                 Process process = JavaProcess.exec(Traductor.class, jvmArgs, argsM);
                 process.waitFor(iTiempoMax,TimeUnit.SECONDS);
                 process.destroy();
-                process.waitFor();
             } catch (IOException | InterruptedException e) {
                 System.err.println("Error IO: " + e.getMessage());
             }
