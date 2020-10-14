@@ -5,11 +5,10 @@ public class CheckUser {
         String user = args[0];
         String OS = System.getProperty("os.name");
         if (OS.equals("Windows 10")) {
-            Runtime.getRuntime().exec("cmd.exe /c > ping net user " + user + " 2>> errorBat.txt");
+            Runtime.getRuntime().exec("cmd.exe /c > salidaCMD.txt net user " + user + " 2>> ERRORES.DAT");
 
         }else if (OS.equals("Linux")) {
-            String[] terminalLinux = new String[] {"/bin/bash", "-c", "cat /etc/passwd", "with", "args"};
-            Process proc = new ProcessBuilder(terminalLinux).start();
+            Process process = Runtime.getRuntime().exec("grep -c " + user);
         }else {
             System.err.println("Sistema operativo no detectado. Campeon");
         }
