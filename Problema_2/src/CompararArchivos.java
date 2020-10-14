@@ -22,7 +22,10 @@ public class CompararArchivos {
             System.err.println("Error IO: " + e.getMessage());;
         }
 
+        assert content1 != null;
         if (content1.equals(content2))
             System.out.println("Los do archisvo sons insguale.");
+        else
+            System.out.println("Los do archisvo no sons insguale.");
     }
 }
