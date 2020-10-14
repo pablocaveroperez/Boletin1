@@ -65,7 +65,7 @@ class TraducirThread extends Thread {
             sFrase = "Pon una frase para traducirla, campeon";
         String EN_TO_SP = "http://translate.google.es/?hl="+sIdioma1+"#auto/"+ sIdioma2 +"/"+sFrase;
 
-        ProcessBuilder pb = new ProcessBuilder(sRuta, EN_TO_SP);            //        <-- your job
+        ProcessBuilder pb = new ProcessBuilder(sRuta, EN_TO_SP);
         try {
             // Lanzamos el proceso
             pb.start();
