@@ -18,7 +18,7 @@ public class CheckUser {
                 s = salidaCMD.readLine();
             }
         }else if (OS.equals("Linux")) {
-            Process process = Runtime.getRuntime().exec("cut -d : -f 1 /etc/passwd");
+            Process process = Runtime.getRuntime().exec("cut -d : -f 1 /etc/passwd 2>>ERRORES.DAT");
             BufferedReader salidaCMD = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String s = salidaCMD.readLine();
             while (s != null && !s.equals(user)) {
