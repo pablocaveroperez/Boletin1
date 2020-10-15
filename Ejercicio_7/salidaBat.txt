@@ -44,3 +44,26 @@ C:\Users\Medac\Desktop\PROG-REPO\Segundo\Boletin1\Ejercicio_7\NUEVO>DIRR
 
 C:\Users\Medac\Desktop\PROG-REPO\Segundo\Boletin1\Ejercicio_7\NUEVO>ECHO FIN COMANDOS 
 FIN COMANDOS
+
+C:\Users\gelve\IdeaProjects\Boletin1\Ejercicio_7>MD NUEVO 
+
+C:\Users\gelve\IdeaProjects\Boletin1\Ejercicio_7>CD NUEVO 
+
+C:\Users\gelve\IdeaProjects\Boletin1\Ejercicio_7\NUEVO>ECHO CREO FICHERO  1>mifichero.txt 
+
+C:\Users\gelve\IdeaProjects\Boletin1\Ejercicio_7\NUEVO>DIR
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 82CA-C4CA
+
+ Directorio de C:\Users\gelve\IdeaProjects\Boletin1\Ejercicio_7\NUEVO
+
+08/10/2020  15:40    <DIR>          .
+08/10/2020  15:40    <DIR>          ..
+15/10/2020  20:38                15 mifichero.txt
+               1 archivos             15 bytes
+               2 dirs  248.413.614.080 bytes libres
+
+C:\Users\gelve\IdeaProjects\Boletin1\Ejercicio_7\NUEVO>DIRR
+
+C:\Users\gelve\IdeaProjects\Boletin1\Ejercicio_7\NUEVO>ECHO FIN COMANDOS 
+FIN COMANDOS
