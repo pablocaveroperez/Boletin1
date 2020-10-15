@@ -18,15 +18,16 @@ public class CheckUser {
                 s = salidaCMD.readLine();
             }
         }else if (OS.equals("Linux")) {
-            Process process = Runtime.getRuntime().exec("cut -d : -f -1 grep -c " + user);
+            Process process = Runtime.getRuntime().exec("cut -d : -f 1 /etc/passwd");
             BufferedReader salidaCMD = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String s = salidaCMD.readLine();
-            if (s == null) {
-                System.err.println("Usuario no encontrado. Error annadido al archivo ERRORES.DAT");
-            }
-            while (s != null) {
-                System.out.println(s);
+            while (s != null && !s.equals(user)) {
                 s = salidaCMD.readLine();
+            }
+            if (s != null)
+                System.out.println("Usuario encontrado en el sistema.");
+            else if (s == null) {
+                System.err.println("Usuario no encontrado. Error annadido al archivo ERRORES.DAT");
             }
         }else {
             System.err.println("Sistema operativo no detectado. Campeon");
