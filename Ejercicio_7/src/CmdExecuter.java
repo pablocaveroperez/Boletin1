@@ -7,10 +7,8 @@ public class CmdExecuter {
         List<String> jvmArgs = new ArrayList<>();
         List<String> argsM = new ArrayList<>();
 
-        Process process;
-
         try {
-            process = JavaProcess.exec(EjecutaBat.class, jvmArgs, argsM);
+            JavaProcess.exec(EjecutaBat.class, jvmArgs, argsM);
         }catch (InterruptedException e) {
             System.err.println("Error IE: " + e.getMessage());
         }
