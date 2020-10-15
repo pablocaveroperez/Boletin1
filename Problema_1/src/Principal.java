@@ -26,11 +26,9 @@ public class Principal {
 
         do {
             try {
-                iTiempoMax = (int) ValidaLibrary.valida("Introduce el tiempo maximo de ejecucion del proceso(en milisegundos): ", 1,1000,1);
-
+                iTiempoMax = (int) ValidaLibrary.valida("Introduce el tiempo maximo de ejecucion del proceso(en milisegundos): ", 1,10000,1);
                 Process process = JavaProcess.exec(Traductor.class, jvmArgs, argsM);
                 process.waitFor(iTiempoMax,TimeUnit.MILLISECONDS);
-                process.destroy();
             } catch (IOException | InterruptedException e) {
                 System.err.println("Error IO: " + e.getMessage());
             }
