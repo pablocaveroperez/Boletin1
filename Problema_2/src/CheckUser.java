@@ -11,7 +11,7 @@ public class CheckUser {
             BufferedReader salidaCMD = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String s = salidaCMD.readLine();
             if (s == null) {
-                System.err.println("Usuario no encontrado. Error añadido al archivo ERRORES.DAT");
+                System.err.println("Usuario no encontrado. Error annadido al archivo ERRORES.DAT");
             }
             while (s != null) {
                 System.out.println(s);
@@ -19,6 +19,15 @@ public class CheckUser {
             }
         }else if (OS.equals("Linux")) {
             Process process = Runtime.getRuntime().exec("grep -c " + user);
+            BufferedReader salidaCMD = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String s = salidaCMD.readLine();
+            if (s == null) {
+                System.err.println("Usuario no encontrado. Error annadido al archivo ERRORES.DAT");
+            }
+            while (s != null) {
+                System.out.println(s);
+                s = salidaCMD.readLine();
+            }
         }else {
             System.err.println("Sistema operativo no detectado. Campeon");
         }
